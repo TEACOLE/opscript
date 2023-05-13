@@ -1,0 +1,70 @@
+local localPlr = game.Players.LocalPlayer
+local uis = game:GetService("UserInputService")
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "TA X HUB", IntroText = "TA X HUB credit", HidePremium = false, SaveConfig = true, ConfigFolder = "SwagScript69"})
+
+local Credits = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Credit = Credits:AddSection({
+	Name = "Credits"
+})
+
+Credit:AddParagraph("ZERO HUB","Creator")
+
+Credit:AddButton({
+	Name = "Copy to clipboard",
+	Callback = function()
+		setclipboard("TA X HUB BY ZERO HUB")
+		OrionLib:MakeNotification({
+			Name = "Copied To Clipboard!",
+			Content = "By GamerAbhiyan",
+			Image = "rbxassetid://4483345998",
+			Time = 5
+		})
+	end    
+})
+
+Credit:AddParagraph("TA X HUB","Copy My Youtube Channel Link")
+
+Credit:AddButton({
+	Name = "Copy to clipboard",
+	Callback = function()
+		setclipboard("https://youtube.com/@Zerotahub")
+		OrionLib:MakeNotification({
+			Name = "Copied To Clipboard!",
+			Content = "By GamerAbhiyan",
+			Image = "rbxassetid://4483345998",
+			Time = 5
+		})
+	end    
+})
+
+local Credit = Credits:AddSection({
+	Name = "Showcase"
+})
+
+Credit:AddParagraph("GamerAbhiyan","Showcasers")
+
+Credit:AddParagraph("???","Showcasers")
+
+Credit:AddParagraph("???","Showcasers")
+
+Credit:AddParagraph("???","Showcasers")
+
+local Credit = Credits:AddSection({
+	Name = "Make"
+})
+
+Credit:AddParagraph("Wednesday 1 February 2023 | 21:53 WIB","Making Script")
+
+Credit:AddParagraph("Wednesday 29 March | 06:45 WIB","Done Making Scripts")
+
+Credit:AddParagraph("GamerAbhiyan Is Indonesian people","My Country")
+
+Credit:AddParagraph("Delta Executor 【Android】","My Executor Used")
